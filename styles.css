@@ -24,10 +24,13 @@ main {
   background: #eee;
   display: flex;
   margin: auto;
-
   height: 100vh;
   width: 100vw;
+  flex-direction: row;
+  border: 2px solid #aaaa;
+  flex-wrap: wrap;
 }
+
 .card {
   max-width: 600px;  /*breyta í em*/
   max-height: 400px; /*breyta í em*/
@@ -36,18 +39,18 @@ main {
   overflow: hidden;
   border-radius: 5px; /* útlit border*/
   flex-direction: column;
- /* display: flex;
+  display: flex;
   justify-content: space-around;
-
+  background-color: white;
   align-items: center;
-  flex-wrap: wrap;
+
   width: 75%;
-  border: 1px solid black;*/
+
 }
 
 .card__image {
-  width: 2px; /*vantar aðrar myndir em??*/
-  /* flex: 0 0 50%; setur mynd í 50 % af cardinu grow shrink og basis skipun í shorthand*/
+  width: 20px; /*vantar aðrar myndir em??*/
+  flex: 0 0 50%;
   /* setja padding?*/
 }
 
@@ -55,7 +58,7 @@ main {
   max-width: 100%; /*vantar aðrar myndir*/
 }
 
-ul tags {
+.card__tags {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap; /*skalar niður kassa eftir skjástærð*/
@@ -63,8 +66,8 @@ ul tags {
   align-items: center;
 }
 
-tag {
-  font-weight: ;
+.card__tag {
+  font-weight: bold;
   margin-right: 10px;
   margin-bottom: 10px;
 }

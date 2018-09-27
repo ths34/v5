@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.cards {
+  background: #eee;
+  display: flex;
+  margin: auto;
+
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  max-width: 600px;  /*breyta í em*/
+  max-height: 400px; /*breyta í em*/
+  margin: 0 auto;
+  border: 2px solid #aaaa;
+  overflow: hidden;
+  border-radius: 5px; /* útlit border*/
+  flex-direction: column;
+ /* display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+  border: 1px solid black;*/
+}
+
+.card__image {
+  width: 2px; /*vantar aðrar myndir em??*/
+  /* flex: 0 0 50%; setur mynd í 50 % af cardinu grow shrink og basis skipun í shorthand*/
+  /* setja padding?*/
+}
+
+.card__img {
+  max-width: 100%; /*vantar aðrar myndir*/
+}
+
+ul tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; /*skalar niður kassa eftir skjástærð*/
+  list-style: none; /*tekur burtu punkta*/
+  align-items: center;
+}
+
+tag {
+  font-weight: ;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card__headline {
+  margin-top: 
+  display: flex;
+}
+
+.card__content {
+  display: flex; /*setur content hlið við hlið*/
+}
+
+.card__text {
+  font-size: 1em;
+  line-height: 1.375;
+  overflow: auto; /*gefur scrollbar á texta*/
+}
+/* display: flex; gefur flex eiginleika
+justify-content: center; hegðun á aðalás
+tinybox í dæmatíma box inni boxi
+container
